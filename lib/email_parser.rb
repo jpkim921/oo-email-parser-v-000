@@ -13,10 +13,10 @@ class EmailParser
   end
 
   def parse
-    if @emails.include?(",")
-      arr = @emails.gsub!(/,/, "").split
+    if emails.include?(",")
+      arr = emails.gsub!(/,/, "").split
     else
-      arr = @emails.split
+      arr = emails.split
     end
       arr.uniq
   end
